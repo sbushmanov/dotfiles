@@ -1,0 +1,325 @@
+[begin] (FluxBox)
+
+    [exec] (Chromium) {chromium-browser} 
+    [exec] (Zeal) {/home/sergey/.local/bin/zeal.sh}
+    [exec] (Alarm) {alarm-clock-applet}
+    [exec] (Telegram) {/home/sergey/Telegram/Telegram}
+    [exec] (Viber) {/opt/viber/Viber}
+    [exec] (Anydesk) {-c anydesk)
+    [exec] (Terminal) {x-terminal-emulator}
+    [exec] (Browser) {chromium-browser}
+    [exec] (Bluetooth) {blueman-manager}
+    [exec] (Recoll) {recoll}
+    [exec] (GIMP) {gimp}
+ 
+ 
+    [submenu] (MPlayer)
+            [exec] (Programming) {mplayer /home/sergey/Music/programming/*}
+            [exec] (Siver Rain) {mplayer http://213.59.4.27:8000/silver128.mp3 -cache 1024}
+            [submenu] (FLAC)
+                    [exec] (Blues) {mplayer https://streams.radiomast.io:443/radioblues-flac -cache 1024}
+                    [exec] (HiOnline) {mplayer http://mscp2.live-streams.nl:8100/flac.flac}
+                    [exec] (Sector Classical) {mplayer http://sectorradio.com/nota-flac}
+                    [exec] (Sector Progressive) {mplayer http://sectorradio.com/progressive-flac}
+                    [exec] (Sector Space) {mplayer http://sectorradio.com/space-flac}
+                    [exec] (Sector Zed) {mplayer http://sectorradio.com/zed-flac}
+                    [exec] (Sector Geny) {mplayer http://sectorradio.com/geny-flac}
+                    [exec] (Sector Next) {mplayer http://sectorradio.com/next-flac}
+                    [exec] (Naim Classical) {mplayer http://mscp3.live-streams.nl:8250/class-flac.flac}
+                    [exec] (Naim Jazz) {mplayer http://mscp3.live-streams.nl:8340/jazz-flac.flac}
+                    [exec] (Mother Earth) {mplayer http://icecast3.streamserver24.com:18800/motherearth -cache 4096}
+                    
+            [end]
+            [submenu] (Blues)
+                    [exec] (Di Radio Blues) {mplayer http://5.39.71.159:8990/stream -cache 1024}
+            [end]
+            [submenu] (Classics)                     
+                    [exec] (Classic Mozart) {mplayer http://37.251.146.169:8300}
+                    [exec] (Radio Beethoven) {mplayer http://37.251.146.169:7200}
+                    [exec] (Malvern International) {mplayer http://149.255.59.164:8184/stream -cache 1024}
+                    [exec] (Otto's Classical) {mplayer http://185.33.21.111:80/classical_mobile_aac -cache 1024}                      
+                    [exec] (Venice Classic) {mplayer http://5.135.173.165:80/stream1 -cache 1024}
+                    [exec] (Classic Romania) {mplayer http://37.251.146.169:8000/stream4 -cache 1024}
+            [end]                                            
+            [submenu] (Chillout and ethno)
+                    [exec] (Mirobyte) {mplayer https://i-radio.info:8055/radio -cache 1024}
+                    [exec] (Etho) {mplayer https://i-radio.info:8065/radio -cache 1024}
+                    [exec] (Hirschmilch) {mplayer http://hirschmilch.de:7000/chillout.mp3 -cache 1024}
+                    [exec] (FlatZatFM) {mplayer http://listen.radionomy.com:80/FlamZatFM -cache 1024}
+                    [exec] (Radio Farenheit) {mplayer http://111.223.36.22:5002 -cache 1024}
+                    [exec] (Chillout Lounge 1FM) {mplayer http://185.33.21.111:80/chilloutlounge -cache 1024}
+                    [exec] (Leak City) {mplayer http://198.50.156.92:8110/stream -cache 1024}
+            [end]
+            [submenu] (Jazz)
+                    [exec] (AsianJazz) {mplayer https://kathy.torontocast.com:3330 -cache 1024}
+                    [exec] (Jazz) {mplayer http://199.180.75.118:80/stream -cache 1024}
+            [end]
+            [submenu] (Pop)
+                    [exec] (KazaFM) {mplayer http://198.50.158.92:10212 -cache 1024}
+                    [exec] (Radio7) {mplayer http://radio7server.streamr.ru:8040/radio7256.mp3 -cache 1024}
+                    [exec] (DiscoFoxFM) {mplayer http://87.118.78.2:8000 -cache 1024}
+                    [exec] (Antenne Bayerne) {mplayer http://stream.antenne.de:80/antenne -cache 1024}
+                    [exec] (Duna Gold) {mplayer http://92.118.27.164:20010/stream -cache 1024}
+                    [exec] (Movie Themes) {mplayer http://5.39.71.159:8173/stream -cache 1024}
+                    [exec] (Movie Soundtracks) {mplayer http://185.33.21.111:80/moviesoundtracks_128 -cache 1024}
+                    [exec] (Duna Gold) {mplayer http://92.118.27.164:20010/stream -cache 1024}
+                    
+            [end]
+            [submenu] (Rap & HipHop)
+                    [exec] (Party Vibe) {mplayer http://94.130.242.5:8016/stream -cache 1024}
+                    [exec] (Blackbeats) {mplayer http://stream.blackbeatslive.de/ -cache 1024}
+                    [exec] (Jamz 108) {mplayer http://108.61.30.179:4000 -cache 1024}
+            [end]
+            [submenu] (Reggae)
+                    [exec] (Reggae Hits Radio) {mplayer http://188.165.236.118:9882/stream -cache 1024}
+            [end]
+    [end]
+    [exec] (Kill MPlayer) {pkill -9 mplayer}
+    
+    [separator]
+   
+    [submenu] (Development)
+        [exec] (Icon Browser) {yad-icon-browser}
+        [exec] (Jupyter Notebook) {alacritty -e jupyter-notebook}
+        [exec] (NVIDIA Nsight Compute 2020.3.1) {/opt/nvidia/nsight-compute/2020.3.1/host/linux-desktop-glibc_2_11_3-x64/ncu-ui}
+        [exec] (NVIDIA Nsight Systems 2020.4.3) {/opt/nvidia/nsight-systems/2020.4.3/host-linux-x64/nsys-ui}
+        [exec] (NVIDIA Visual Profiler) {nvvp}
+        [exec] (Oracle Java 8 Mission Control) {jmc}
+        [exec] (Qt 5 Assistant) {/usr/lib/qt5/bin/assistant}
+        [exec] (Qt 5 Designer) {/usr/lib/qt5/bin/designer}
+        [exec] (Qt 5 Linguist) {/usr/lib/qt5/bin/linguist}
+    [end]
+    [submenu] (Editors)
+        [exec] (GVim) {gvim}
+        [exec] (Leafpad) {leafpad}
+        [exec] (Neovim) {alacritty -e nvim}
+        [exec] (Text Editor) {gedit}
+        [exec] (Vim) {alacritty -e vim}
+    [end]
+    [submenu] (Games)
+        [submenu] (Arcade)
+            [exec] (Pacman) {pacman}
+        [end]
+        [submenu] (Board)
+            [exec] (Mahjongg) {gnome-mahjongg}
+        [end]
+        [submenu] (Card)
+            [exec] (AisleRiot Solitaire) {sol}
+        [end]
+        [submenu] (Puzzle)
+            [exec] (Mines) {gnome-mines}
+            [exec] (Sudoku) {gnome-sudoku}
+        [end]
+    [end]
+    [submenu] (Graphics)
+        [exec] (DjView4) {djview4}
+        [exec] (Image Viewer) {eog}
+        [exec] (Image Viewer) {gpicview}
+        [exec] (mtPaint graphic editor) {mtpaint}
+        [exec] (Shotwell) {shotwell}
+        [exec] (Simple Scan) {simple-scan}
+    [end]
+    [submenu] (Multimedia)
+        [exec] (Audacious) {audacious}
+        [exec] (Cheese) {cheese}
+        [exec] (GNOME MPV) {gnome-mpv}
+        [exec] (guvcview) {guvcview}
+        [exec] (mpv Media Player) {mpv --player-operation-mode=pseudo-gui}
+        [exec] (PulseAudio Volume Control) {pavucontrol}
+        [exec] (Rhythmbox) {rhythmbox}
+        [exec] (Videos) {totem}
+        [exec] (VLC media player) {vlc}
+        [exec] (Xfburn) {xfburn}
+    [end]
+    [submenu] (Network)
+        [exec] (AnyDesk) {anydesk}
+        [exec] (Chromium Web Browser) {chromium-browser}
+        [exec] (Firefox Web Browser) {firefox}
+        [exec] (Google Chrome) {google-chrome-stable}
+        [exec] (KDE Connect Indicator) {kdeconnect-indicator}
+        [exec] (Mail Reader) {exo-open --launch MailReader}
+        [exec] (Microsoft Teams - Preview) {teams}
+        [exec] (Oracle Java 8 Web Start) {javaws}
+        [exec] (Pidgin Internet Messenger) {pidgin}
+        [exec] (Remmina) {remmina}
+        [exec] (Skype) {skypeforlinux}
+        [exec] (Slack) {slack}
+        [exec] (Sylpheed) {sylpheed}
+        [exec] (Telegram Desktop) {/opt/telegram/telegram -workdir /home/sergey/.local/share/TelegramDesktop/}
+        [exec] (Telegram Desktop) {/opt/telegram/Telegram}
+        [exec] (Thunderbird Mail) {thunderbird}
+        [exec] (Web Browser) {exo-open --launch WebBrowser}
+        [exec] (Wireshark) {wireshark}
+        [exec] (Zoom) {zoom}
+    [end]
+    [submenu] (Office)
+        [exec] (AbiWord) {abiword}
+        [exec] (Calendar) {gnome-calendar}
+        [exec] (calibre) {calibre}
+        [exec] (Document Viewer) {evince}
+        [exec] (E-book editor) {ebook-edit}
+        [exec] (E-book viewer) {ebook-viewer}
+        [exec] (Easy eBook Viewer) {easy-ebook-viewer}
+        [exec] (Gnumeric) {gnumeric}
+        [exec] (LibreOffice Impress) {libreoffice}
+        [exec] (LRF viewer) {lrfviewer}
+        [exec] (Okular) {okular}
+        [exec] (prerex) {alacritty -e prerex}
+        [exec] (Recoll) {recoll}
+        [exec] (vprerex) {vprerex}
+    [end]
+    [submenu] (Other)
+        [exec] (SQL Developer) {sqldeveloper}
+    [end]
+    [submenu] (Science)
+        [exec] (R) {alacritty -e R}
+    [end]
+    [submenu] (Shells)
+        [exec] (Alacritty) {alacritty}
+        [exec] (File Manager PCManFM) {pcmanfm}
+        [exec] (Files) {nautilus}
+        [exec] (LXTerminal) {lxterminal}
+        [exec] (Terminal) {gnome-terminal}
+        [exec] (UXTerm) {uxterm}
+        [exec] (XTerm) {xterm}
+    [end]
+    [submenu] (System)
+        [submenu] (Settings)
+            [submenu] (GNOME)
+                [exec] (Appearance) {unity-control-center appearance}
+                [exec] (Bluetooth) {unity-control-center bluetooth}
+                [exec] (Bluetooth Manager) {blueman-manager}
+                [exec] (Brightness & Lock) {unity-control-center screen}
+                [exec] (Color) {unity-control-center color}
+                [exec] (Desktop Sharing) {unity-control-center screen-sharing}
+                [exec] (Details) {unity-control-center info}
+                [exec] (Disks) {gnome-disks}
+                [exec] (Displays) {unity-control-center display}
+                [exec] (Keyboard) {unity-control-center keyboard}
+                [exec] (Language Support) {gnome-language-selector}
+                [exec] (Light Locker Settings) {light-locker-settings}
+                [exec] (LightDM GTK+ Greeter settings) {lightdm-gtk-greeter-settings-pkexec}
+                [exec] (Mouse & Touchpad) {unity-control-center mouse}
+                [exec] (Network) {network-admin}
+                [exec] (Network) {unity-control-center network}
+                [exec] (Network Connections) {nm-connection-editor}
+                [exec] (Online Accounts) {unity-control-center online-accounts}
+                [exec] (Power) {unity-control-center power}
+                [exec] (Printers) {system-config-printer}
+                [exec] (Security & Privacy) {unity-control-center activity-log-manager}
+                [exec] (Settings) {gnome-control-center}
+                [exec] (Software & Updates) {software-properties-gtk}
+                [exec] (Sound) {unity-control-center sound}
+                [exec] (Startup Applications) {gnome-session-properties}
+                [exec] (Text Entry) {unity-control-center region}
+                [exec] (Time & Date) {unity-control-center datetime}
+                [exec] (Time and Date) {time-admin}
+                [exec] (Tweaks) {gnome-tweaks}
+                [exec] (Universal Access) {unity-control-center universal-access}
+                [exec] (Users and Groups) {users-admin}
+                [exec] (Wacom Tablet) {unity-control-center wacom}
+            [end]
+            [submenu] (Xfce)
+                [exec] (Additional Drivers) {software-properties-gtk --open-tab=4}
+                [exec] (Bluetooth Adapters) {blueman-adapters}
+                [exec] (Screensaver) {xscreensaver-demo}
+            [end]
+            [exec] (Abstractile) {/usr/lib/xscreensaver/abstractile -root}
+            [exec] (BinaryRing) {/usr/lib/xscreensaver/binaryring -root}
+            [exec] (BleachBit) {bleachbit}
+            [exec] (BleachBit as Administrator) {pkexec bleachbit}
+            [exec] (Boot Repair) {boot-repair-pkexec}
+            [exec] (Customize Look and Feel) {lxappearance}
+            [exec] (CWaves) {/usr/lib/xscreensaver/cwaves -root}
+            [exec] (Deco) {/usr/lib/xscreensaver/deco -root}
+            [exec] (Default applications for LXSession) {lxsession-default-apps}
+            [exec] (Desktop Preferences) {pcmanfm --desktop-pref}
+            [exec] (Distort) {/usr/lib/xscreensaver/distort -root}
+            [exec] (Fancontrol-GUI) {fancontrol_gui}
+            [exec] (Fcitx Configuration) {fcitx-configtool}
+            [exec] (Fiberlamp) {/usr/lib/xscreensaver/fiberlamp -root}
+            [exec] (FuzzyFlakes) {/usr/lib/xscreensaver/fuzzyflakes -root}
+            [exec] (Galaxy) {/usr/lib/xscreensaver/galaxy -root}
+            [exec] (Hexadrop) {/usr/lib/xscreensaver/hexadrop -root}
+            [exec] (IBus Preferences) {ibus-setup}
+            [exec] (Input Method) {im-config}
+            [exec] (KDE Connect Settings) {kcmshell5 kcm_kdeconnect}
+            [exec] (Keyboard and Mouse) {lxinput}
+            [exec] (Livepatch) {software-properties-gtk --open-tab=6}
+            [exec] (m6502) {/usr/lib/xscreensaver/m6502 -root}
+            [exec] (MetaBalls) {/usr/lib/xscreensaver/metaballs -root}
+            [exec] (Monitor Settings) {lxrandr}
+            [exec] (Notifications) {xfce4-notifyd-config}
+            [exec] (NVIDIA X Server Settings) {nvidia-settings}
+            [exec] (Openbox Configuration Manager) {obconf}
+            [exec] (OpenJDK Java 8 Policy Tool) {policytool}
+            [exec] (Oracle Java 8 Plugin Control Panel) {/usr/lib/jvm/java-8-oracle/bin/ControlPanel}
+            [exec] (Passwords and Keys) {seahorse}
+            [exec] (Penrose) {/usr/lib/xscreensaver/penrose -root}
+            [exec] (Power Management) {ukui-power-preferences}
+            [exec] (Power Manager) {xfce4-power-manager-settings}
+            [exec] (Preferred Applications) {exo-preferred-applications}
+            [exec] (Ripples) {/usr/lib/xscreensaver/ripples -root}
+            [exec] (Setup Hot Keys) {lxhotkey --gui=gtk}
+            [exec] (SlideScreen) {/usr/lib/xscreensaver/slidescreen -root}
+            [exec] (Software Updater) {update-manager}
+            [exec] (Startup Disk Creator) {usb-creator-gtk}
+            [exec] (Swirl) {/usr/lib/xscreensaver/swirl -root}
+            [exec] (Synaptic Package Manager) {synaptic-pkexec}
+            [exec] (Tessellimage) {/usr/lib/xscreensaver/tessellimage -root}
+            [exec] (TeXdoctk) {texdoctk}
+            [exec] (User Accounts) {unity-control-center user-accounts}
+            [exec] (xkeycaps) {xkeycaps}
+            [exec] (XLyap) {/usr/lib/xscreensaver/xlyap -root}
+        [end]
+        [exec] (dconf Editor) {dconf-editor}
+        [exec] (Disk Usage Analyzer) {baobab}
+        [exec] (Fcitx) {fcitx}
+        [exec] (GDebi Package Installer) {gdebi-gtk}
+        [exec] (GParted) {gparted}
+        [exec] (Htop) {alacritty -e htop}
+        [exec] (Oracle Java 8 Console) {jconsole}
+        [exec] (Oracle Java 8 VisualVM) {jvisualvm}
+        [exec] (Power Statistics) {ukui-power-statistics}
+        [exec] (Power Statistics) {gnome-power-statistics}
+        [exec] (Psensor) {psensor}
+        [exec] (Software) {gnome-software}
+        [exec] (System Profiler and Benchmark) {hardinfo}
+        [exec] (System Settings) {unity-control-center --overview}
+        [exec] (Task Manager) {lxtask}
+        [exec] (UNetbootin) {unetbootin_asroot}
+        [exec] (Y PPA Manager) {y-pkexec}
+    [end]
+    [submenu] (Utilities)
+        [exec] (Activity Log Manager) {activity-log-manager}
+        [exec] (Archive Manager) {file-roller}
+        [exec] (Backups) {deja-dup}
+        [exec] (balenaEtcher) {balena-etcher-electron}
+        [exec] (Character Map) {gucharmap}
+        [exec] (compton) {compton}
+        [exec] (dupeGuru) {dupeguru}
+        [exec] (File Manager) {exo-open --launch FileManager}
+        [exec] (Fonts) {gnome-font-viewer}
+        [exec] (Galculator) {galculator}
+        [exec] (Gxkb) {gxkb}
+        [exec] (Help) {yelp}
+        [exec] (Screenshot) {gnome-screenshot --interactive}
+        [exec] (Solaar) {solaar}
+        [exec] (Terminal Emulator) {exo-open --launch TerminalEmulator}
+        [exec] (To Do) {gnome-todo}
+        [exec] (Xpad) {xpad}
+    [end]
+    [separator]
+    [submenu] (FluxBox)
+        [workspaces] (Workspaces)
+        [submenu] (Styles)
+            [stylesdir] (/usr/share/fluxbox/styles)
+            [stylesdir] (~/.fluxbox/styles)
+        [end]
+        [config] (Configure)
+        [reconfig] (Reconfig)
+        [restart] (Restart)
+        [separator]
+        [exit] (Exit)
+    [end]
+[end]

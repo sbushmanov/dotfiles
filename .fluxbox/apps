@@ -1,0 +1,71 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=chromium-browser) (class=Chromium-browser) (role=browser)
+  [Maximized]	{yes}
+[end]
+[app] (name=rstudio) (class=RStudio)
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+  [Close]	{yes}
+[end]
+[app] (name=sun-awt-X11-XFramePeer) (class=com.aquafold.datastudio.mainframe.Vaxj)
+  [Deco]	{NONE}
+[end]
+[app] (name=evince) (class=Evince)
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+[end]
+[app] (name=jetbrains-pycharm) (class=jetbrains-pycharm)
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+[end]
+[app] (name=pcmanfm) (class=Pcmanfm)
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+[end]
+[app] (name=gnome-terminal-server) (class=Gnome-terminal) (role=gnome-terminal-window-b26983a3-b49a-4c53-9a21-2da357233646)
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+[end]
+[app] (name=gnome-terminal-server) (class=Gnome-terminal) (role=gnome-terminal-window-e0df5a55-b2d6-4a86-b664-0372497a795a)
+  [Deco]	{NONE}
+  [Maximized]	{no}
+  [Fullscreen]	{no}
+  [Close]	{yes}
+[end]
+[app] (name=nautilus) (class=Nautilus)
+  [Deco]	{0x5ff}
+  [Maximized]	{yes}
+  [Close]	{yes}
+[end]
+[app] (name=jetbrains-idea) (class=jetbrains-idea)
+  [Head]	{1}
+  [Dimensions]	{99% 97%}
+  [Position]	(UPPERLEFT)	{0% 0%}
+  [Deco]	{NONE}
+  [Maximized]	{no}
+  [Fullscreen]	{no}
+[end]
+[app] (name=vlc) (class=vlc)
+[end]
+[app] (name=jetbrains-datagrip) (class=jetbrains-datagrip)
+  [Head]	{1}
+  [Dimensions]	{98% 90%}
+  [Position]	(UPPERLEFT)	{1% 3%}
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+[end]
+[app] (name=google-chrome) (class=Google-chrome) (role=browser)
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+[end]
+[app] (name=Navigator) (class=Firefox) (role=browser)
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+[end]
+[app] (name=jetbrains-dataspell) (class=jetbrains-dataspell)
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+[end]
