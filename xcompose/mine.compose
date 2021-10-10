@@ -1,0 +1,87 @@
+<Multi_key>     <colon>   <i>                     : "ï"   U00CF        #   Lower i Umlaut (diacritic)
+<Multi_key>     <m>       <N>                     : "𝓝"   U1D4DD       #   MATHEMATICAL BOLD SCRIPT CAPITAL N
+<Multi_key>     <m>       <e>                     : "∊"   U220A        #   SMALL ELEMENT OF
+<Multi_key>     <m>       <E>                     : "∈"   U2208        #   Element of
+<Multi_key>     <m>       <slash>      <E>        : "∉"   U2209        #   NOT ELEMENT OF
+<Multi_key>     <m>       <0>          <0>        : "∞"   U221E        #   INFINITY
+<Multi_key>     <8>       <8>                     : "∞"   U221E        #   INFINITY
+<Multi_key>     <m>       <m>                     : "𝜇"   U1D707       #   MATHEMATICAL ITALIC SMALL MU
+<Multi_key>     <m>       <s>                     : "𝜎"   U1D70E       #   MATHEMATICAL ITALIC SMALL SIGMA
+<Multi_key>     <m>       <l>                     : "𝜆"   U1D706       #   MATHEMATICAL ITALIC SMALL LAMDA
+<Multi_key>     <m>       <a>                     : "𝛼"   U1D6FC       #   MATHEMATICAL ITALIC SMALL ALPHA
+<Multi_key>     <m>       <b>                     : "𝛽"   U1D6FD       #   MATHEMATICAL ITALIC SMALL BETA
+<Multi_key>     <m>       <less>       <greater>  : "≷"   U2277        #   Mathematical Operators Greater-than or less-than
+<Multi_key>     <m>       <greater>    <less>     : "≷"   U2277        #   Mathematical Operators Greater-than or less-than
+
+
+#  The general logic for Math Symbols:
+#       <Multi_key>  <dollar> <numbersign> +
+##      <b>       Bold                     "𝐚"
+##      <i>       Italic                   "𝑎"
+##      <I>       Bold Italic              "𝒂"
+##      <s>       Script                   "𝒶"
+##      <S>       Bold Script Calligraphic "𝓪"
+##      <f>       Fraktur                  "𝔞"
+##      <F>       Bold Fraktur             "𝔞"
+##      <|>       Double-Struck            "𝕒"
+##      <,> <,>   Sans-serif               "𝖺"
+##      <,> <b>   Sans-serif Bold          "𝗮"
+##      <,> <i>   Sans-serif Italic        "𝘢"
+##      <,> <I>   Sans-serif Bold Italic   "𝙖" 
+##      <m>       Monospace                "𝛼"
+
+# The general logic for GREEK Symbls:
+##      Add <asterisk> (i.e. type "*") at the end of keystroke, prior to enetring the desired letter
+
+# Examples:
+
+<Multi_key>  <dollar> <numbersign> <bar>   <A>                       :  "𝔸"   U1D538 # MATHEMATICAL DOUBLE-STRUCK CAPITAL A
+<Multi_key>  <dollar> <numbersign> <i>     <asterisk> <a>            :  "𝛼"   U1D6FC # MATHEMATICAL ITALIC SMALL ALPHA
+<Multi_key>  <dollar> <numbersign> <i>     <asterisk> <A>            :  "𝛢"   U1D6E2 # MATHEMATICAL ITALIC CAPITAL ALPHA
+<Multi_key>  <dollar> <numbersign> <b>     <asterisk> <a>            :  "𝛂"   U1D6C2 # MATHEMATICAL BOLD SMALL ALPHA
+<Multi_key>  <dollar> <numbersign> <I>     <asterisk> <a>            :  "𝜶"   U1D736 # MATHEMATICAL BOLD ITALIC SMALL ALPHA
+<Multi_key>  <dollar> <numbersign> <b>     <asterisk> <A>            :  "𝚨"   U1D6A8 # MATHEMATICAL BOLD CAPITAL ALPHA
+<Multi_key>  <dollar> <numbersign> <comma> <I>        <asterisk> <a> :  "𝞪"   U1D7AA # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL ALPHA
+<Multi_key>  <dollar> <numbersign> <comma> <b>        <asterisk> <a> :  "𝝰"   U1D770 # MATHEMATICAL SANS-SERIF BOLD SMALL ALPHA
+                                                                         a
+
+# MATH, немного математики…
+<Multi_key> <O> <slash> : "⌀" U2300 # DIAMETER SIGN
+<Multi_key> <slash> <O> : "⌀" U2300 # DIAMETER SIGN
+<Multi_key> <r> <r> : "√" U221A # SQUARE ROOT
+<Multi_key> <r> <3> : "∛" U221B # CUBE ROOT
+<Multi_key> <m> <A> : "∀" U2200 # FOR ALL
+<Multi_key> <m> <d> : "∂" U2202 # PARTIAL DIFFERENTIAL
+<Multi_key> <m> <D> : "∆" U2206 # INCREMENT, Laplace operator
+<Multi_key> <m> <S> : "∑" U2211 # N-ARY SUMMATION, Sigma
+<Multi_key> <m> <I> : "∫" U222B # INTEGRAL
+<Multi_key> <m> <minus> : "−" U2212 # MINUS SIGN
+<Multi_key> <equal> <asciitilde> : "≈" U2248 # ALMOST EQUAL TO
+<Multi_key> <asciitilde> <equal> : "≈" U2248 # ALMOST EQUAL TO
+<Multi_key> <underscore> <underscore> : "‾" U023E # OVERLINE
+<Multi_key> <equal> <slash>     : "≠"   U2260 # NOT EQUAL TO
+<Multi_key> <slash> <equal>     : "≠"   U2260 # NOT EQUAL TO
+<Multi_key> <equal> <equal>     : "≡"   U2261 # IDENTICAL TO
+<Multi_key> <m> <less> <equal> : "≤" U2264 # LESS-THAN OR EQUAL TO
+<Multi_key> <m> <greater> <equal> : "≥" U2265 # GREATER-THAN OR EQUAL TO
+<Multi_key> <m> <o> <o> : "∞" # infty
+<Multi_key> <m> <underscore> <i> : "ᵢ" # subscript i
+<Multi_key> <m> <asciicircum> <i> : "ⁱ" # superscript i
+<Multi_key> <m> <asciicircum> <N> : "ᴺ" # superscript N
+<Multi_key> <m> <underscore> <minus> : "₋" # subscript minus
+<Multi_key> <m> <asciicircum> <minus> : "⁻" # superscript minus
+<Multi_key> <m> <underscore> <plus> : "₊" # subscript plus
+<Multi_key> <m> <asciicircum> <plus> : "⁺" # superscript plus
+<Multi_key> <m> <asterisk> : "∘" # ring (function compose) operator
+<Multi_key> <m> <period> : "∙" # dot operator
+<Multi_key> <m> <asciitilde> : "∝" # proportional to
+<Multi_key> <q> <e> <d> : "∎" # q.e.d.
+<dead_greek> <c>            : "∂"   U2202    # PARTIAL DIFFERENTIAL
+<dead_greek> <C>            : "∇"   U2207    # NABLA
+
+
+# Символ рубля
+17 <Multi_key> <p>           <equal>           : "₽" U20bd # RUBLE-CURRENCY SIGN
+18 <Multi_key> <Cyrillic_er> <equal>           : "₽" U20bd # RUBLE-CURRENCY SIGN
+19 <Multi_key> <equal>       <p>               : "₽" U20bd # RUBLE-CURRENCY SIGN
+20 <Multi_key> <equal>       <Cyrillic_er>     : "₽" U20bd # RUBLE-CURRENCY SIGN

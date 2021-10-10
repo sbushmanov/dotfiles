@@ -1,0 +1,75 @@
+# UTF-8 (Unicode) compose sequence
+include "compose(rwin)"
+
+include "/home/sergey/xcompose/mine.compose"
+#include "%L"
+include "/home/sergey/xcompose/XCompose"
+include "/home/sergey/xcompose/dotXCompose"
+include "/home/sergey/xcompose/frakturcompose"
+include "/home/sergey/xcompose/emoji.compose"
+include "/home/sergey/xcompose/modletters.compose"
+include "/home/sergey/xcompose/maths.compose"
+include "/home/sergey/xcompose/parens.compose"
+include "/home/sergey/xcompose/mine.compose"
+
+
+# Удобная пунктуация в русской раскладке
+#<Multi_key> <Cyrillic_be> <Cyrillic_be>	: "„" # открывающая кавычка-лапка (RUS)
+<Multi_key> <Cyrillic_yu> <Cyrillic_yu>	: "“" # закрывающая кавычка-лапка (RUS)
+<Multi_key> <Cyrillic_io> <Cyrillic_io>	: "“" # закрывающая кавычка-лапка (RUS)
+<Multi_key> <slash> <slash>             : "«" # открывающая кавычка-ёлочка (RUS)
+<Multi_key> <bar> <bar>                 : "»" # закрывающая кавычка-ёлочка (RUS)
+<Multi_key> <Cyrillic_BE> <Cyrillic_BE> : "«" # открывающая кавычка-ёлочка (RUS)
+<Multi_key> <Cyrillic_YU> <Cyrillic_YU> : "»" # закрывающая кавычка-ёлочка (RUS)
+<Multi_key> <Cyrillic_ya>               : "̶"  # зачеркивание (комбинирующееся)
+<Multi_key> <Cyrillic_e> <Cyrillic_e>   : "́" # ударение (комбинирующееся)
+
+# Old (pre-1917) russian:
+<Multi_key> <Cyrillic_SOFTSIGN> <minus>	: "Ҍ" U0462 #CYRILLIC CAPITAL LETTER YAT
+<Multi_key> <Cyrillic_softsign> <minus> : "ѣ" U0463 #CYRILLIC SMALL LETTER YAT
+<Multi_key> <Cyrillic_O> <minus> : "Ѳ" U0472 # CYRILLIC CAPITAL LETTER FITA
+<Multi_key> <Cyrillic_o> <minus> : "ѳ" U0473 # CYRILLIC SMALL LETTER FITA
+
+
+# Ordinal indicators
+<Multi_key> <A> <A> : "ª"
+<Multi_key> <O> <O> : "º"
+
+
+
+# макросы для писем и веба
+<Multi_key> <S> <Y> : "Sincerely yours"
+<Multi_key> <B> <R> : "Best regards"
+<Multi_key> <a> <h> : "<a href=\"\"></a>"
+<Multi_key> <i> <m> : "<img src=\"\" alt=\"\" >"
+<Multi_key> <b> <q> : "<blockquote></blockquote>"
+<Multi_key> <c> <d> : "<code></code>"
+<Multi_key> <e> <m> : "<em></em>"
+<Multi_key> <s> <t> : "<strong></strong>"
+<Multi_key> <p> <r> : "<pre class=\"sh_code\"></pre>"
+<Multi_key> <m> <m> : ":m + "
+
+# JUST FOR FUN, веселья ради
+<Multi_key> <bracketleft> <space> <bracketright> : "☐" # квадратик
+<Multi_key> <bracketleft> <v> <bracketright> : "☑" # квадратик
+<Multi_key> <bracketleft> <x> <bracketright> : "☒" # квадратик
+<Multi_key> <asterisk> <asterisk> : "★" U2605 # закрашенная звёзда
+<Multi_key> <asterisk> <0> : "☆" U2606 # незакрашенная звёзда
+<Multi_key> <t> <t> : "☎" U260E # телефон
+<Multi_key> <k> <b> : "⌨" U2328 # клавиатурка
+<Multi_key> <c> <l> : "⌚" U231A # часы
+<Multi_key> <n> <n> : "♫" U266B # нотки
+<Multi_key> <n> <b> : "♭" U266D # бемоль
+<Multi_key> <n> <number> : "♯" U266F # диез
+<Multi_key> <less> <3> : "♥" U2665 # сердечко
+<Multi_key> <less> <0> : "♡" U2661 # пустое сердечко
+<Multi_key> <3> <3> : "☘" U2618 # трилистник
+<Multi_key> <asciitilde> <asciitilde> : "☙" U2619 # завитушка
+<Multi_key> <p> <e> : "☮"> U262E # пацифизм
+<Multi_key> <k> <z> : "☭" U262D # «коси и забивай»
+<Multi_key> <w> <w> : "⚠" U26A0 # внимание
+<Multi_key> <b> <h> : "☣" U2623 # биохазард!
+<Multi_key> <r> <a> : "☢" U2622 # радиоактивность!!
+<Multi_key> <percent> <percent> : "⌘" U2318 # осторожно, маки!!!
+<Multi_key> <r> <c> : "♲" U2672 # в переработку!
+
